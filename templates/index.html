@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            multiple models in a single view
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("td").each(function()
+                {
+                    if(this.innerText==="")
+                    {
+                       this.closest("tr").remove(); 
+                    }
+                });
+            });
+        </script>
+    <body>
+        <center>
+            <h1>HWO TO CREATE A MULTIPLE MODELS IN A SINGLE VIEW</h1>
+            <h2>django rest framwork</h2>
+            <h3> retrive all data from model in django rest framwork (api)
+            <br>
+            <br>
+            <hr>
+            <h3>Table Empleoyee (MODEL 1) </h3>
+            <table border="1">
+                <tr>
+                    <th>EMPLOYEE ID</th>
+                    <th>EMPLOYEE NAME</th>
+                    <th>EMAIL</th>
+                    <th>SALARY</th>
+                </tr>
+                {% for empmodel in employeemodel %}
+                <tr>
+                    <td>{{empmodel.empid}}</td>
+                    <td>{{empmodel.empname}}</td>
+                    <td>{{empmodel.email}}</td>
+                    <td>{{empmodel.salary}}</td>
+                </tr>
+
+
+                {% endfor %}
+
+            </table>
+            <br>
+            <hr>
+
+            <h3>Table sports (MODEL 2) </h3>
+            <table border="1">
+                <tr>
+                    <th>SPORT ID</th>
+                    <th>SPORT NAME</th>
+                    <th>SPORT TIMEING</th>
+                </tr>
+                {% for sportmodel in sportsmodel %}
+                <tr>
+                    <td>{{sportmodel.sportid}}</td>
+                    <td>{{sportmodel.sportname}}</td>
+                    <td>{{sportmodel.sporttimeing}}</td>
+                    
+                </tr>
+
+
+                {% endfor %}
+
+            </table>
+        </center>
+    </body>
+</html>
