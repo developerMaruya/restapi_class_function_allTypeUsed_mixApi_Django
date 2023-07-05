@@ -36,3 +36,11 @@ http://localhost:8000/admin/
 Username- demo
 Password- demo
 
+# Image
+![Screenshot (158)](https://github.com/developerMaurya/restapi_class_function_allTypeUsed_mixApi_Django/assets/137375643/fde6f994-c9ca-4934-bbc5-9fdb4afad0b8)
+![Screenshot (159)](https://github.com/developerMaurya/restapi_class_function_allTypeUsed_mixApi_Django/assets/137375643/55f386d4-bcf2-476d-92f5-3c422f9c564f)
+![Screenshot (160)](https://github.com/developerMaurya/restapi_class_function_allTypeUsed_mixApi_Django/assets/137375643/80bedb04-c3a2-4da9-a79a-9035053195a3)
+
+
+
+
